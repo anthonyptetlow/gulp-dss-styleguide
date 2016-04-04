@@ -1,0 +1,20 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+
+
+    {% for item in blocks %}
+        {{ item | json_encode(item) }}
+        {{ item.name }}
+        {{ item.description }}
+
+        {{ item.markup.example }}
+
+        <code>
+            {{ item.markup.escaped }}
+        </code>
+    {% endfor %}
+
+
+{% endblock %}
+

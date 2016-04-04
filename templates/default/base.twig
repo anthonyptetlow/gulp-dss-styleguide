@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+##::::: ##: ########::::::: ###:::: ########:: ########:::: ##:::: ##: ####: ########:: ####: ##::: ##:: ######::
+##: ##: ##: ##.....::::::: ## ##::: ##.... ##: ##.....::::: ##:::: ##:. ##:: ##.... ##:. ##:: ###:: ##: ##... ##:
+##: ##: ##: ##::::::::::: ##:. ##:: ##:::: ##: ##:::::::::: ##:::: ##:: ##:: ##:::: ##:: ##:: ####: ##: ##:::..::
+##: ##: ##: ######:::::: ##:::. ##: ########:: ######:::::: #########:: ##:: ########::: ##:: ## ## ##: ##:: ####
+##: ##: ##: ##...::::::: #########: ##.. ##::: ##...::::::: ##.... ##:: ##:: ##.. ##:::: ##:: ##. ####: ##::: ##:
+##: ##: ##: ##:::::::::: ##.... ##: ##::. ##:: ##:::::::::: ##:::: ##:: ##:: ##::. ##::: ##:: ##:. ###: ##::: ##:
+ ###. ###:: ########:::: ##:::: ##: ##:::. ##: ########:::: ##:::: ##: ####: ##:::. ##: ####: ##::. ##:. ######::
+
+Would you like to be part of our creative, ambitious, fun and innovative environment?
+http://www.thedrum.com/work-with-us
+
+-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="assets/images/icons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/images/icons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="assets/images/icons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="assets/images/icons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="assets/images/icons/manifest.json">
+        <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg" color="#ed1c24">
+        <meta name="msapplication-TileColor" content="#ed1c24">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#000000">
+
+
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="dev-new.thedrum.com/assets/css/the-drum-grid-site.css">
+            <link rel="stylesheet" href="dev-new.thedrum.com/assets/css/styles.css" />
+        {% endblock %}
+
+        <!--[if lt IE 9]>
+            <script src="/assets/js/lt-ie-9.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <a href="#content" class="skip">Skip to content</a>
+        <header>
+            <div class="top_header">
+                <div class="container">
+                    <div class="col">
+                        <ul>
+                            <li><a href="http://new.thedrum.com/news" class="top_header__item top_header__item--active">News</a></li>
+                            <li><a href="http://www.thedrum.com/awards" class="top_header__item">Awards</a></li>
+                            <li><a href="http://www.thedrum.com/live-events" class="top_header__item">Live Events</a></li>
+                            <li><a href="http://www.thedrum.com/network/take-fresh-approach-raising-your-profile-potential-clients-and-adding-profit-your-bottom" class="top_header__item">The Drum Network</a></li>
+                            <li><a href="http://www.thedrum.com/profile" class="top_header__item">Profile Hub</a></li>
+                            <li><a href="http://www.thedrum.com/research" class="top_header__item">Research</a></li>
+                            <li><a href="http://www.thedrum.com/thedrumworks" class="top_header__item">Drum Works</a></li>
+                            <li><a href="http://www.thedrum.com/jobs" class="top_header__item">Jobs</a></li>
+                            <li><a href="http://www.recommendedagencies.com" class="top_header__item">Find an agency</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="container">
+                    <div class="col">
+                    <a href="/">
+                        <img class="header__logo desktop_only" src="/assets/images/logo/logo-thedrum-news-desktop.svg" alt="The Drum">
+                        <img class="header__logo mobile_only" src="/assets/images/logo/logo-thedrum-news-mobile.svg" alt="The Drum">
+                    </a>
+                    <span class="beta">BETA</span>
+                    <!-- <span class="tagline desktop_only">"Marketing can change the world."</span> -->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main id="content">
+            {% block body %}
+            {% endblock %}
+        </main>
+
+
+
+
+        {% block javascripts %}
+            <!--[if gte IE 9]><!-->
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+            <!--<![endif]-->
+            <!--[if lte IE 8]>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <![endif]-->
+             <!-- <script async src="/assets/js/core.js"></script> -->
+        {% endblock %}
+    </body>
+</html>

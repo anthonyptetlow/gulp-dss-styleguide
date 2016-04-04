@@ -1,0 +1,18 @@
+/*
+	@name Article Snippet
+	@description This is the default template for an article snippet
+
+	@markup
+    <div class="article_snippet article_snippet--secondary">
+        <span class="article_snippet__published ">5 mins ago</span>
+
+		<a class="article_snippet__tag" href="/advertising">Advertising</a>
+
+        <a class="article_snippet__link" href="#">
+			<img src="http://placehold.it/800x400">
+
+            <h3 class="article_snippet__header article_snippet__header--secondary">Eurostar Taps Instagram’s Horizontal Potential In Latest Campaign</h3>
+        </a>
+    </div>
+
+*/
