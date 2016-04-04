@@ -4,17 +4,22 @@
 
 
     {% for item in blocks %}
-        {{ item | json_encode(item) }}
-        {{ item.name }}
-        {{ item.description }}
+		<h2>{{ item.name }}</h2>
 
-        {{ item.markup.example }}
+        <p>{{ item.description }}</p>
 
-        <code>
-            {{ item.markup.escaped }}
-        </code>
+        {{ item.markup.example | raw}}
+
+        <pre>
+	        <code class="language-html">{{ item.markup.example  | escape }}</code>
+        </pre>
     {% endfor %}
 
 
 {% endblock %}
 
+{% block nav %}
+    {% for page in styleguide %}
+		<a href="/{{page.url}}">{{page.title}}</a>
+    {% endfor %}
+{% endblock %}

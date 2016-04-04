@@ -4,6 +4,8 @@ var styleguide = require("./index.js");
 
 gulp.task('default', function() {
 	return gulp.src('./examples/**/*.css')
-		.pipe(styleguide())
+		.pipe(styleguide({
+			template: 'templates/default/style.twig'
+		}))
 		.pipe(gulp.dest('./results/'));
 });
