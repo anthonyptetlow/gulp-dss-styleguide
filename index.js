@@ -65,8 +65,7 @@ module.exports = function(opt) {
 
                 page.url = page.url.replace(file.cwd + '/', '').replace(/\.(css|less|scss|sass)/g, '.html');
 
-                page.title = page.file.replace(file.cwd + '/', '').replace(/\.(css|less|scss|sass)/g, '').split('/').filter(function (item) { return item !== ''}).pop().replace(/_/g, ' ').trim();
-
+                page.title = page.url.replace(/\.(css|less|scss|sass|html)/g, '').split('/').filter(function (item) { return item !== ''}).pop().replace(/_/g, ' ').trim();
                 styleguide.push(page)
             }
 
@@ -86,6 +85,11 @@ module.exports = function(opt) {
         });
 
         var g = this;
+        styleguide.sort(function(a, b) {
+            var textA = a.title.toUpperCase();
+            var textB = b.title.toUpperCase();
+            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        });
 
         // Generate css guide pages
         styleguide.forEach(function (page) {
