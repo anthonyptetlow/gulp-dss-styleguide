@@ -100,7 +100,8 @@ module.exports = function(opt) {
 
         //Generate index page
         var rendercontents = templateHome.render({styleguide: styleguide});
-        var temp = new File({ path: 'index.html', contents: new Buffer(rendercontents) })
+        var temp = new File({ path: opt.indexLocation || 'index.html', contents: new Buffer(rendercontents) })
+
             g.push(temp);
 
         callback();
